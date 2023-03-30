@@ -7,7 +7,7 @@
     android:background="@color/green_codersv3">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/euro_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="24dp"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/prompt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="24dp"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/euro_input" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/dollar_output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -62,13 +62,75 @@
         app:layout_constraintTop_toBottomOf="@+id/convert_button">
 
         <TextView
-            android:id="@+id/convertedAmount"
+            android:id="@+id/dollarsLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:text="@string/dollars"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/output"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/retry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dollar_output"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/retry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/retry_question"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginVertical="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="24dp">
+
+            <Button
+                android:id="@+id/button_YES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/yes"
+                android:background="@color/purple_350"
+                android:textColor="@color/white"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <Button
+                android:id="@+id/button_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no"
+                android:background="@color/purple_350"
+                android:textColor="@color/white"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 

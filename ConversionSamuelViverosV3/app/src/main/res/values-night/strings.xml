@@ -6,4 +6,5 @@
     <string name="converter_prompt">Euros :</string>
     <string name="dollars">Dollars:</string>
     <string name="input_hint">Enter Amount Here</string>
+    <string name="output">Amount to be shown.</string>
 </resources>

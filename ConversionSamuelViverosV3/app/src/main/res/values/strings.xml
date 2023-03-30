@@ -7,4 +7,8 @@
     <string name="convert">Convert</string>
     <string name="dollars">Dollars:</string>
     <string name="input_hint">Enter Amount Here</string>
+    <string name="output">Amount to be shown.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry_question">Try Again?</string>
 </resources>
