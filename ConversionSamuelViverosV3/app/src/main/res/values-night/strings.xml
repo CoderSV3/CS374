@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ConversionSamuelViverosV3</string>
     <string name="welcome_message">Hello!\n\nWelcome to the Euro/Dollar Converter!</string>
     <string name="welcome_instruction">Press the \'Begin\' button to start!</string>
     <string name="start_button_text">Begin</string>
     <string name="converter_prompt">Euros :</string>
+    <string name="convert">Convert</string>
     <string name="dollars">Dollars:</string>
     <string name="input_hint">Enter Amount Here</string>
     <string name="output">Amount to be shown.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry_question">Try Again?</string>
 </resources>
